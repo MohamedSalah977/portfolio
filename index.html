@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Salah</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Mohamed Salah.</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#skills">Compétences</a></li> <!-- Correction: "Compétence" -> "Compétences" -->
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Mohamed Salah.</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">À propos</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Expérience</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Compétences</a></li> <!-- Correction ici aussi -->
+        <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" class="imgpic" alt="Photo de profil de Mohamed Salah" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Je me présente, je suis</p>
+      <h1 class="title">Mohamed Salah Mani</h1>
+      <p class="section__text__p2">Génie logiciel</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Mohamed salah Mani (1).pdf')">
+          Télécharger CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Infos Contact
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="Mon profil LinkedIn" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/mohamedsalahmani/'" />
+        <img src="./assets/github.png" alt="Mon profil Github" class="icon"
+          onclick="location.href='https://github.com/MohamedSalah977'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">En savoir plus</p>
+    <h1 class="title">À propos de moi</h1>
+    <br>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.jpg" alt="Photo de profil" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <div style="text-align: center;">
+              <img src="./assets/experience.png" alt="Icône expérience" class="icon" />
+              <h3>Expérience</h3>
+            </div>
+            <ul style="padding: 5%">
+              <h4>Stagiaire | Juin 2024 :</h4>
+              <li>Office National de l'Assainissement</li>
+              <h4>Projet web full stack | 2025 :</h4>
+              <li>Une application de gestion des tâches pour l'ensemble de la communauté universitaire.</li>
+              <h4>Projet d'indexation vidéo | 2025 :</h4>
+              <li>Détection d'objets avec l'IA, indexation et recherche de vidéos.</li> <!-- Correction: "AI" -> "IA" -->
+              <h4>Implémentation d'IBM Granite Model | 2025 :</h4> <!-- Correction: "Implemetation" -> "Implémentation" -->
+              <li>Utilisation des modèles IBM Granite pour la génération de code et les tâches de programmation</li>
+              <li>Configuration d'un modèle IBM Granite pour classifier et résumer des données</li>
+              <h4>Portfolio Personnel | 2025 :</h4>
+              <li>Création d'un portfolio personnel pour présenter mes projets et compétences.</li>
+              <h4>Bénévolat :</h4>
+              <li><strong>IEEE:</strong> Institute of Electrical and Electronics Engineers.</li>
+              <li><strong>Visualize Club :</strong> Club à but non lucratif visant à changer les mentalités.</li> <!-- Correction: "visionne" -> "visant" -->
+            </ul>
+          </div>
+          <div class="details-container">
+            <div style="text-align: center;">
+              <img src="./assets/education.png" alt="Icône éducation" class="icon" />
+              <h3>Éducation et certifications</h3> <!-- Correction: "certification" -> "certifications" -->
+            </div>
+            <ul style="padding: 5%">
+              <h4>Licence en génie logiciel | 2023-2026 :</h4>
+              <li>L'Institut Supérieur des Technologies de l'Information et de la Communication (Borj Cédria)</li> <!-- Correction: "cédria" -> "Cédria" -->
+              <h4>Certification ISTQB | 2025 :</h4>
+              <li>Tests de logiciels</li> <!-- Correction: "Test" -> "Tests" -->
+              <h4>Certification NVIDIA | 2025 :</h4> <!-- Correction: "NVIDEA" -> "NVIDIA" -->
+              <li>Fondamentaux du Deep Learning</li>
+              <h4>Certification IBM | 2025 :</h4>
+              <li>Fondamentaux de l'intelligence artificielle</li>
+              <li>Classification et résumé des données avec IBM Granite</li>
+              <li>Génération et optimisation de code avec IBM Granite</li>
+            </ul>
+            <p style="text-align: center;"><a href="https://www.credly.com/users/mohamed-salah-mani"><img
+                  src="assets/credly.png" alt="Credly"></a></p> <!-- Correction: "credly" -> "Credly" -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Icône flèche" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Découvrez mon</p>
+    <h1 class="title">Expérience</h1>
+    <div class="section-container">
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- First Column -->
+          <div class="details-container" >
+            
+            <ul style="padding: 5%">
+              <h4>Stagiaire | Juin 2024 : Office National de l'Assainissement</h4>
+              <li>Assistance à la conception d'applications web internes et à la gestion de bases de données.</li>
+              <li>Configuration réseau, maintenance informatique et réparation de matériel.</li>
+              <li>Découverte et configuration de firewalls pour sécuriser les réseaux.</li>
+            <br>
+            <h4>Projet web full stack | 2025 : En collaboration avec des membres IEEE</h4>
+            <p>Une application de gestion des tâches pour l'ensemble de la communauté universitaire, visant à automatiser et à faciliter les tâches quotidiennes.</p>
+            
+              <li>Conception UX/UI : Figma</li>
+              <li>Développement web : Angular, Bootstrap, HTML, CSS, TypeScript</li>
+              <li>Développement back-end : J2EE, MySQL, WildFly</li>
+              <li>Approche méthodologique : Méthodologie Agile, Scrum</li>
+            <br>
+            <h4>Projet d'indexation vidéo | 2025 :</h4>
+            <p>Ce projet implémente un système d'indexation vidéo intelligent basé sur deux technologies principales :</p>
+              <li><strong>YOLOv8</strong> pour la détection d'objets dans les vidéos.</li>
+              <li><strong>Whisper d'OpenAI</strong> pour la transcription automatique de l'audio.</li>
+              <li>Les vidéos sont analysées automatiquement, et chaque fichier est indexé en fonction des objets détectés et des paroles transcrites.</li>
+            </ul>
+          </div>
+
+          <!-- Second Column -->
+          <div class="details-container" >
+            <ul style="padding: 5%">
+              <h4>Implémentation d'IBM Granite Model | 2025 :</h4> <!-- Correction: "Implemetation" -> "Implémentation" -->
+              <li>Projet : AI-Powered Customer Review Analysis & Meeting Summarization</li>
+              <li>Rôle : Product Manager (AI Automation & NLP)</li> <!-- Correction: "Role" -> "Rôle" -->
+              <li>Outils : IBM Granite, Replicate API, Google Colab, Python, LangChain</li>
+            <br>
+            <h4>Portfolio Personnel | 2025 :</h4>
+              <li>Frontend : HTML, CSS, JavaScript</li>
+              <li>Déploiement sur GitHub</li> <!-- Correction: espace avant "sur" -->
+            <br>
+            <h4>Bénévolat :</h4>
+              <li><strong>IEEE:</strong> Participation à plusieurs hackathons et formations axées sur la programmation et la résolution de problèmes.</li> <!-- Correction: "problem solving" -> "résolution de problèmes" -->
+              <li><strong>Visualize Club :</strong> Poste de trésorier avec des responsabilités en gestion financière.</li>
+              <li>Participation à des actions humanitaires : "Hiver au chaud" et "Kofet Romdhane".</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Icône flèche" class="icon arrow" onclick="location.href='./#skills'" />
+  </section>
+  <section id="skills">
+    <p class="section__text__p1">Découvrez mes</p>
+    <h1 class="title">Compétences</h1>
+    <div class="skills-container">
+      <div class="skill">
+        <h3>Développement Frontend</h3>
+        <p>HTML, CSS, JavaScript, Angular, TypeScript, Bootstrap, Design responsive</p>
+      </div>
+      <div class="skill">
+        <h3>Développement Backend</h3>
+        <p>J2EE, MySQL, PL/SQL, Node.js, MongoBD, REST APIs</p>
+      </div>
+      <div class="skill">
+        <h3>Business Intelligence</h3>
+        <p>Data Warehouse, BI Reporting & Dashboards</p>
+      </div>
+      <div class="skill">
+        <h3>Intelligence Artificielle</h3>
+        <p>Deep Learning, Machine Learning, YOLOv8, Whisper, IBM Granite, Génération de prompts précis</p> <!-- Correction: "prompt précises" -> "prompts précis" -->
+      </div>
+      <div class="skill">
+        <h3>Langages de programmation</h3>
+        <p>Java (POO), Python, SQL</p> <!-- Ajout de parenthèses pour POO -->
+      </div>
+      <div class="skill">
+        <h3>Outils et Méthodologies</h3>
+        <p>Github, Méthodologie Agile, Scrum</p>
+      </div>
+      <div class="skill">
+        <h3>Soft Skills</h3>
+        <p>Résolution de problèmes, Sens de la communication, Collaboration transverse</p> <!-- Corrections multiples -->
+      </div>
+      <div class="skill">
+        <h3>Langues</h3> <!-- Correction: "Langues " -> "Langues" (espace en trop) -->
+        <p>Français, Anglais, Arabe</p>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Icône flèche" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Découvrez mes récents</p>
+    <h1 class="title">Projets</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Projet 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Projet Un</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Dépôt GitHub
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Démo en ligne
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Projet 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Projet Deux</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Dépôt GitHub
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Démo en ligne
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Projet 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Projet Trois</h2>
+          <div class="btn-container">
+            <p>À propos</p> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Icône flèche" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <h1 class="title">Contactez-moi</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Icône email" class="icon contact-icon email-icon" />
+        <p><a href="mailto:manimedsalah@gmail.com">manimedsalah@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="Icône LinkedIn" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/mohamedsalahmani/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#experience">Expérience</a></li>
+          <li><a href="#skills">Compétences</a></li> <!-- Correction cohérente -->
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2025 Mohamed Salah. Tous droits réservés.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
